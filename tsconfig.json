@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "lib": ["es2023"],
+        "module": "commonjs",
+        "target": "ES2020",
+
+        "baseUrl": "./",
+        "paths": {
+            "@*": ["modules/*"]
+        },
+
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "noEmit": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "typeRoots": ["./node_modules/@types"],
+
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true
+    },
+    "include": ["modules"]
+}
