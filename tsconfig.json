@@ -27,7 +27,7 @@
         "noImplicitReturns": true,
         "noPropertyAccessFromIndexSignature": false,
         "noUncheckedIndexedAccess": true,
-        "noUnusedLocals": true,
+        "noUnusedLocals": false,
         "noUnusedParameters": true
     },
     "include": ["modules"]
