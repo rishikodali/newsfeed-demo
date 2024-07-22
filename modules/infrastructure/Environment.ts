@@ -5,7 +5,7 @@ export type InfrastructureConfig = {
     appName: string;
     stage: string;
     account: string;
-    regions: string[];
+    activeRegions: string[];
     primaryRegion: string;
     removalPolicy: RemovalPolicy;
 };
@@ -13,9 +13,9 @@ export type InfrastructureConfig = {
 export const environment: InfrastructureConfig[] = [
     {
         account: getEnv("DEVELOPMENT_AWS_ACCOUNT"),
-        appName: "newsfeed",
+        appName: "newsfeed-demo",
         stage: "development",
-        regions: ["us-east-1", "us-west-1"],
+        activeRegions: ["us-east-1", "us-west-1"],
         primaryRegion: "us-east-1",
         removalPolicy: RemovalPolicy.DESTROY,
     },
